@@ -48,19 +48,19 @@
       justify-content: center;
       min-height: 540px;
     }
-    .eyebrow {
+    .kicker {
       display: inline-flex;
       align-self: flex-start;
-      padding: 7px 13px;
+      padding: 8px 12px;
       border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
+      background: #e8f3ef;
+      color: #0f705c;
       font-weight: 700;
-      letter-spacing: 0.015em;
+      letter-spacing: 0.02em;
       font-size: 13px;
       margin-bottom: 12px;
     }
-    h1 {
+    .hero-copy h1 {
       margin: 0;
       font-size: clamp(30px, 3.7vw, 48px);
       line-height: 1.03;
@@ -83,7 +83,7 @@
       line-height: 1.55;
       color: var(--muted);
     }
-    .actions {
+    .ctas {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
@@ -106,7 +106,7 @@
       color: white;
       border-color: #082e33;
     }
-    .stats {
+    .statbar {
       display: grid;
       grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 10px;
@@ -124,10 +124,10 @@
     }
     .stat strong {
       display: block;
-      font-size: 15px;
-      line-height: 1.15;
+      font-size: 20px;
+      line-height: 1.1;
       letter-spacing: -0.02em;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
     .stat span {
       color: var(--muted);
@@ -292,27 +292,30 @@
   </style>
 </head>
 <body>
-  <div class="wrap hero">
-    <div class="hero-grid">
+  <div class="wrap">
+    <section class="hero">
       <section class="panel hero-copy">
-        <div class="eyebrow">RichLand Ltd. · Shunde Source Factory</div>
-        <h1>Quiet Electric Fans for Reliable Everyday Cooling</h1>
-        <div class="subhead">Factory-direct supply from Shunde, China</div>
-        <div class="body">
-          RichLand Ltd. delivers stable OEM / ODM fan programs for importers and retail partners, with disciplined quality control, practical model selection, and dependable communication from inquiry to shipment.
-        </div>
-        <div class="actions">
+        <span class="kicker">RichLand Ltd. · Shunde Source Factory</span>
+        <h1>Factory-Direct Eco-Friendly, Quiet Fans from Shunde, China</h1>
+        <p class="lead">
+          RichLand Ltd. is a source factory with 30 years of home appliance manufacturing experience, focused on practical electric fan solutions for global buyers. This updated product page keeps the B12-style positioning while adding cleaner product galleries built from your uploaded images.
+        </p>
+        <div class="ctas">
           <a class="btn primary" href="#products">View Products</a>
           <a class="btn" href="#contact">Send Inquiry</a>
         </div>
-        <div class="stats">
+        <div class="statbar">
           <div class="stat">
             <strong>30 Years</strong>
-            <span>Home appliance production experience</span>
+            <span>Factory experience</span>
           </div>
           <div class="stat">
             <strong>OEM / ODM</strong>
-            <span>Private label and custom project support</span>
+            <span>Private label support</span>
+          </div>
+          <div class="stat">
+            <strong>MOQ 500 pcs</strong>
+            <span>Flexible bulk orders</span>
           </div>
           <div class="stat">
             <strong>MOQ 500 pcs</strong>
@@ -320,7 +323,7 @@
           </div>
           <div class="stat">
             <strong>7 / 30 / 3 Days</strong>
-            <span>Sample / bulk order / ready-stock lead time</span>
+            <span>Sample / bulk / stock lead time</span>
           </div>
         </div>
       </section>
@@ -329,7 +332,7 @@
           <img src="hero.jpg" alt="RichLand pedestal fan" />
         </div>
       </section>
-    </div>
+    </section>
   </div>
 
   <main id="products" class="wrap">
